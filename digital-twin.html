@@ -84,7 +84,7 @@
                 <div><div class="text-xs font-mono text-tech-cyan uppercase mb-1">DOMAIN 01 • SUB-MODULE 1.1 // NON-LINEAR TAKE-OFF & DRAG-HUMP CFD SWEEP</div><h2 class="text-2xl sm:text-3xl font-mono font-bold text-white uppercase">0 → 38 Knots Foil-Borne Transition & 80% Drag Decoupling Curve</h2></div>
                 <div class="data-card rounded-2xl p-6 bg-zinc-950 border border-zinc-800 space-y-6">
                     <div class="grid md:grid-cols-12 gap-6 items-center pb-5 border-b border-zinc-800 font-mono text-xs">
-                        <div class="md:col-span-5"><div class="flex justify-between mb-1.5"><span class="text-zinc-400">1. Vessel Speed (EF-150 / Scaled D1):</span><span id="to-speed-val" class="text-tech-cyan font-bold">38.0 KT (D1: 13.4 KT | Fn 1.17)</span></div><input id="to-speed-slider" type="range" min="0" max="42" step="0.5" value="38" class="w-full accent-cyan-400 cursor-pointer" oninput="updateTakeoffSim()"></div>
+                        <div class="md:col-span-5"><div class="flex justify-between mb-1.5"><span class="text-zinc-400">1. Vessel Speed (D6 / Scaled D1):</span><span id="to-speed-val" class="text-tech-cyan font-bold">38.0 KT (D1: 13.4 KT | Fn 1.17)</span></div><input id="to-speed-slider" type="range" min="0" max="42" step="0.5" value="38" class="w-full accent-cyan-400 cursor-pointer" oninput="updateTakeoffSim()"></div>
                         <div class="md:col-span-4"><div class="flex justify-between mb-1.5"><span class="text-zinc-400">2. Displacement Mass:</span><span id="to-mass-val" class="text-white font-bold">56.0 Tonnes</span></div><input id="to-mass-slider" type="range" min="40" max="60" step="1" value="56" class="w-full accent-emerald-400 cursor-pointer" oninput="updateTakeoffSim()"></div>
                         <div class="md:col-span-3 text-right"><span id="to-regime-badge" class="inline-block px-3 py-2 rounded bg-tech-emerald/20 border border-tech-emerald/50 text-tech-emerald font-bold text-[11px]">FOIL-BORNE FLIGHT (-80% DRAG)</span></div>
                     </div>
@@ -166,7 +166,7 @@
                 <div><div class="text-xs font-mono text-tech-cyan uppercase mb-1">DOMAIN 02 • SUB-MODULE 2.1 // CARBON-PREPREG T-FOIL CANTILEVER FEA</div><h2 class="text-2xl sm:text-3xl font-mono font-bold text-white uppercase">Carbon-Prepreg T-Foil Cantilever Bending Stress & 2.5g Wave-Slamming Analyzer</h2></div>
                 <div class="data-card rounded-2xl p-6 bg-zinc-950 border border-zinc-800 space-y-6">
                     <div class="grid md:grid-cols-12 gap-6 items-center pb-5 border-b border-zinc-800 font-mono text-xs">
-                        <div class="md:col-span-4"><label class="block text-zinc-400 mb-1.5">1. Select Vessel Foil Assembly:</label><select id="fea-vessel-select" onchange="updateFeaSim()" class="w-full bg-zinc-900 border border-zinc-700 rounded p-2 text-white"><option value="d1">BAYWING-D1 (1.22m Span | 109 kg)</option><option value="d2">BAYWING-D2 (4.50m Span | 12 Tonnes)</option><option value="ef150" selected>BAYWING EF-150 (9.80m Span | 56 Tonnes)</option></select></div>
+                        <div class="md:col-span-4"><label class="block text-zinc-400 mb-1.5">1. Select Vessel Foil Assembly:</label><select id="fea-vessel-select" onchange="updateFeaSim()" class="w-full bg-zinc-900 border border-zinc-700 rounded p-2 text-white"><option value="d1">BAYWING-D1 (1.22m Span | 109 kg)</option><option value="d2">BAYWING-D2 (4.50m Span | 12 Tonnes)</option><option value="D6" selected>BAYWING D6 (9.80m Span | 56 Tonnes)</option></select></div>
                         <div class="md:col-span-4"><div class="flex justify-between mb-1.5"><span class="text-zinc-400">2. Wave Slamming Load:</span><span id="fea-g-val" class="text-tech-cyan font-bold">1.5g</span></div><input id="fea-g-slider" type="range" min="1.0" max="3.0" step="0.1" value="1.5" class="w-full accent-cyan-400" oninput="updateFeaSim()"></div>
                         <div class="md:col-span-4"><div class="flex justify-between mb-1.5"><span class="text-zinc-400">3. Spar Thickness Ratio (t/c):</span><span id="fea-thk-val" class="text-tech-emerald font-bold">14.0%</span></div><input id="fea-thk-slider" type="range" min="10" max="18" step="0.5" value="14" class="w-full accent-emerald-400" oninput="updateFeaSim()"></div>
                     </div>
@@ -279,7 +279,7 @@
                 <div><div class="text-xs font-mono text-tech-amber uppercase mb-1">DOMAIN 03 • SUB-MODULE 3.3 // HKE + CLP DUAL-UTILITY LOAD SYNCHRONIZER</div><h2 class="text-2xl sm:text-3xl font-mono font-bold text-white uppercase">Cross-Harbour Dual-Utility (HKE ↔ CLP) Feeder Load-Sharing & BESS Peak-Shaving Twin</h2></div>
                 <div class="data-card rounded-2xl p-6 bg-zinc-950 border border-zinc-800 space-y-6">
                     <div class="grid md:grid-cols-3 gap-6 pb-5 border-b border-zinc-800 font-mono text-xs">
-                        <div><label class="block text-zinc-400 mb-2">1. Select Cross-Harbour Corridor:</label><select id="clp-corridor-select" onchange="updateClpTwin()" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg p-2.5 text-white"><option value="vh1" selected>VH-01: Sheung Wan (HKE) ⟷ TST (CLP) [D3]</option><option value="vh3">VH-03: Central (HKE) ⟷ Hung Hom (CLP) [D3]</option><option value="reg1">REG-01: Tuen Mun (CLP) ⟷ Tai O [D4]</option><option value="reg2">REG-02: Tsuen Wan West (CLP) ⟷ Ma Wan [D2]</option><option value="gba3">GBA-03: HKIA SkyPier (CLP) ⟷ SZX [EF-150]</option></select></div>
+                        <div><label class="block text-zinc-400 mb-2">1. Select Cross-Harbour Corridor:</label><select id="clp-corridor-select" onchange="updateClpTwin()" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg p-2.5 text-white"><option value="vh1" selected>VH-01: Sheung Wan (HKE) ⟷ TST (CLP) [D3]</option><option value="vh3">VH-03: Central (HKE) ⟷ Hung Hom (CLP) [D3]</option><option value="reg1">REG-01: Tuen Mun (CLP) ⟷ Tai O [D4]</option><option value="reg2">REG-02: Tsuen Wan West (CLP) ⟷ Ma Wan [D2]</option><option value="gba3">GBA-03: HKIA SkyPier (CLP) ⟷ SZX [D6]</option></select></div>
                         <div><div class="flex justify-between mb-2"><span class="text-zinc-400">2. CLP Pier Energy Share (%):</span><span id="clp-split-val" class="text-tech-amber font-bold">30% CLP / 70% HKE</span></div><input id="clp-split-slider" type="range" min="0" max="100" step="5" value="30" class="w-full accent-amber-400" oninput="updateClpTwin()"></div>
                         <div><div class="flex justify-between mb-2"><span class="text-zinc-400">3. CLP Steady Grid Cap (kVA):</span><span id="clp-cap-val" class="text-tech-emerald font-bold">500 kVA Cap</span></div><input id="clp-cap-slider" type="range" min="250" max="3000" step="250" value="500" class="w-full accent-emerald-400" oninput="updateClpTwin()"></div>
                     </div>
@@ -778,8 +778,8 @@
         };
 
         window.updateFeaSim = function() {
-            const cls = document.getElementById('fea-vessel-select')?.value || 'ef150', gLoad = parseFloat(document.getElementById('fea-g-slider')?.value || 1.5), tcRatio = parseFloat(document.getElementById('fea-thk-slider')?.value || 14);
-            const specs = { d1: { span: 1.22, massKg: 109, chord: 0.14 }, d2: { span: 4.50, massKg: 12000, chord: 0.48 }, ef150: { span: 9.80, massKg: 56000, chord: 0.95 } }[cls];
+            const cls = document.getElementById('fea-vessel-select')?.value || 'D6', gLoad = parseFloat(document.getElementById('fea-g-slider')?.value || 1.5), tcRatio = parseFloat(document.getElementById('fea-thk-slider')?.value || 14);
+            const specs = { d1: { span: 1.22, massKg: 109, chord: 0.14 }, d2: { span: 4.50, massKg: 12000, chord: 0.48 }, D6: { span: 9.80, massKg: 56000, chord: 0.95 } }[cls];
             const totalLiftN = specs.massKg * 9.81 * gLoad, rootMomentNm = (totalLiftN * 0.30) * (0.21 * specs.span), thickness = specs.chord * (tcRatio / 100);
             const peakStressMPa = Math.round((rootMomentNm / ((specs.chord * 0.45 * Math.pow(thickness, 2)) / 6.0)) / 1e6);
             document.getElementById('fea-g-val').textContent = `${gLoad.toFixed(1)}g`; document.getElementById('fea-thk-val').textContent = `${tcRatio.toFixed(1)}%`;
@@ -930,7 +930,7 @@
             ctx.fillStyle = '#00f2ff'; ctx.font = 'bold 11px JetBrains Mono'; ctx.fillText('25m×8m PONTOON + VACUUM PADS', 160, py + 28);
             ctx.strokeStyle = '#10b981'; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(340, py); ctx.lineTo(460, py - 48); ctx.lineTo(600, vy - 18); ctx.stroke();
             ctx.fillStyle = '#06281e'; ctx.strokeStyle = '#10b981'; ctx.lineWidth = 2.5; ctx.fillRect(540, vy - 18, 260, 52); ctx.strokeRect(540, vy - 18, 260, 52);
-            ctx.fillStyle = '#ffffff'; ctx.fillText('BAYWING EF-150 (3.6 MW MCS LOCKED)', 560, vy + 12);
+            ctx.fillStyle = '#ffffff'; ctx.fillText('BAYWING D6 (3.6 MW MCS LOCKED)', 560, vy + 12);
         };
 
         window.updateDebrisSim = function() {
