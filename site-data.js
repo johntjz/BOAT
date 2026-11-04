@@ -2,7 +2,7 @@
 window.SITE_DATA = {
     // 1. KEY UPDATABLE FINANCIAL & TECHNICAL METRICS (HKD)
     metrics: {
-        docId: 'AM-EF150-FS-2026 (REV 7.5)',
+        docId: 'AM-D6-FS-2026 (REV 7.5)',
         dieselCostPerNM_HKD: 175.50,
         electricCostPerNM_HKD: 38.22,
         opexReductionPct: '78%',
@@ -43,7 +43,7 @@ window.SITE_DATA = {
         }
     },
 
-    // 3. MODULAR 5-VESSEL LINEUP (D2 -> EF-150)
+    // 3. MODULAR 5-VESSEL LINEUP (D2 -> D6)
     fleet: [
         {
             code: 'BAYWING-D2',
@@ -126,7 +126,7 @@ window.SITE_DATA = {
             }
         },
         {
-            code: 'BAYWING EF-150',
+            code: 'BAYWING D6',
             borderCls: 'border-l-purple-400',
             accentCls: 'text-purple-400',
             specsEn: '28.5m LOA | 38 Knots',
@@ -288,31 +288,31 @@ window.SITE_DATA = {
             tc: { catLabel: '區域常規走廊', name: '愉景灣 ⟷ 坪洲 / 神樂院', cap: '40 座', evTime: '4 分鐘', dieselTime: '10 分鐘', chargeMin: '3分', charger: '即停即走（神樂院零電力需求）', notes: '以 4 分鐘純電靜音穿梭艇取代傳統柴油街渡，神樂院等小碼頭無需任何電力基建。' }
         },
         {
-            id: 'gba-1', code: 'GBA-01', cat: 'gba', dist: 36.0, vessel: 'BAYWING EF-150', speed: 38, kwh: 640, saveHKD: 14.43, co2: 5120, defaultTrips: 4,
+            id: 'gba-1', code: 'GBA-01', cat: 'gba', dist: 36.0, vessel: 'BAYWING D6', speed: 38, kwh: 640, saveHKD: 14.43, co2: 5120, defaultTrips: 4,
             pathD: 'M 585 265 C 510 255, 475 385, 360 412 C 260 430, 185 412, 115 395',
             en: { catLabel: 'GBA CROSS-BORDER CORRIDOR', name: 'HK Sheung Wan (22kV CIQ Water-Airport) ⟷ Macau (Taipa / Outer Harbour)', cap: '150 VIP Pax', evTime: '55 mins', dieselTime: '60 mins', chargeMin: '12m', charger: 'Sheung Wan 22kV MCS + Macau 400V-to-BESS Buffer', notes: 'Flagship uncapped-yield corridor: powered at Sheung Wan (GIS: 22.290175, 114.148746) by our 22 kV Concrete Substation (≥7.0 mPD, 3×1,500 kVA + BESS) and at Macau Outer Harbour/Taipa by a dockside BESS buffer fed from DSMM-confirmed 400V surplus reserves.' },
             tc: { catLabel: '大灣區跨境走廊', name: '香港上環 (22kV 水上機場口岸) ⟷ 澳門 (氹仔 / 外港)', cap: '150 尊尚座', evTime: '55 分鐘', dieselTime: '60 分鐘', chargeMin: '12分', charger: '香港上環 22kV 快充 + 澳門 400V 儲能緩衝', notes: '港澳高毛利核心旗艦走廊：香港端由上環 (22.290175, 114.148746) ≥7.0 mPD 混凝土變電站 (3×1,500 kVA) 直供；澳門端利用海事局確認之 400V 庫餘電量配合岸基儲能櫃 (BESS) 緩衝輸出兆瓦級補電。' }
         },
         {
-            id: 'gba-2', code: 'GBA-02', cat: 'gba', dist: 22.0, vessel: 'BAYWING EF-150', speed: 38, kwh: 390, saveHKD: 10.30, co2: 3650, defaultTrips: 5,
+            id: 'gba-2', code: 'GBA-02', cat: 'gba', dist: 22.0, vessel: 'BAYWING D6', speed: 38, kwh: 390, saveHKD: 10.30, co2: 3650, defaultTrips: 5,
             pathD: 'M 585 265 C 515 245, 485 195, 435 182 C 335 165, 235 135, 155 95',
             en: { catLabel: 'GBA CROSS-BORDER CORRIDOR', name: 'HK Sheung Wan (22kV CIQ Water-Airport) ⟷ Shenzhen Shekou', cap: '150 VIP Pax', evTime: '38 mins', dieselTime: '50 mins', chargeMin: '10m', charger: '3.5 MW MCS (Sheung Wan 22kV Hub)', notes: 'Medium-range uncapped commercial route connecting Hong Kong Island’s financial core with Shenzhen Qianhai/Shekou in 38 minutes.' },
             tc: { catLabel: '大灣區跨境走廊', name: '香港上環 (22kV 水上機場口岸) ⟷ 深圳蛇口', cap: '150 尊尚座', evTime: '38 分鐘', dieselTime: '50 分鐘', chargeMin: '10分', charger: '3.5 MW MCS (上環 22kV 樞紐)', notes: '中距離高收益商業航線，38 分鐘連接香港核心金融區與深圳前海/蛇口科創中心。' }
         },
         {
-            id: 'gba-3', code: 'GBA-03', cat: 'gba', dist: 25.0, vessel: 'BAYWING EF-150', speed: 38, kwh: 440, saveHKD: 11.31, co2: 4010, defaultTrips: 5,
+            id: 'gba-3', code: 'GBA-03', cat: 'gba', dist: 25.0, vessel: 'BAYWING D6', speed: 38, kwh: 440, saveHKD: 11.31, co2: 4010, defaultTrips: 5,
             pathD: 'M 325 248 C 285 205, 225 145, 155 95',
             en: { catLabel: 'GBA CROSS-BORDER CORRIDOR', name: 'HKIA SkyPier (Airside APM Transfer) ⟷ Shenzhen Airport (SZX) / Macau', cap: '150 Pax + Through-Baggage', evTime: '40 mins', dieselTime: '50 mins', chargeMin: '11m', charger: '3.5 MW SkyPier Airside MCS', notes: 'Airline feeder model: international passengers step off HKIA Terminal 1 onto the underground Automated People Mover (APM) to SkyPier with zero HK immigration friction and fly at 38 knots straight to Shenzhen Airport or Macau.' },
             tc: { catLabel: '大灣區跨境走廊', name: '香港機場海天碼頭 (禁區無人駕駛列車轉乘) ⟷ 深圳寶安機場 / 澳門', cap: '150 座 + 直掛行李艙', evTime: '40 分鐘', dieselTime: '50 分鐘', chargeMin: '11分', charger: '3.5 MW 海天碼頭禁區 MCS', notes: '航空公司聯運接駁模式：國際轉機旅客由香港機場一號客運大樓乘搭地下無人駕駛列車 (APM) 直達海天碼頭禁區，免過香港海關及入境處，40 分鐘直達深圳寶安機場或澳門。' }
         },
         {
-            id: 'gba-4', code: 'GBA-04', cat: 'gba', dist: 35.0, vessel: 'BAYWING EF-150', speed: 38, kwh: 620, saveHKD: 13.88, co2: 4920, defaultTrips: 4,
+            id: 'gba-4', code: 'GBA-04', cat: 'gba', dist: 35.0, vessel: 'BAYWING D6', speed: 38, kwh: 620, saveHKD: 13.88, co2: 4920, defaultTrips: 4,
             pathD: 'M 585 265 C 510 255, 470 375, 355 402 C 255 418, 185 405, 115 395',
             en: { catLabel: 'GBA CROSS-BORDER CORRIDOR', name: 'HK Sheung Wan (22kV CIQ Water-Airport) ⟷ Zhuhai Jiuzhou', cap: '150 VIP Pax', evTime: '54 mins', dieselTime: '65 mins', chargeMin: '12m', charger: '3.5 MW MCS (Sheung Wan 22kV Hub)', notes: 'Direct CBD-to-CBD hydrofoil fairway from Sheung Wan to Zhuhai Jiuzhou Port with active 100Hz wave stabilization.' },
             tc: { catLabel: '大灣區跨境走廊', name: '香港上環 (22kV 水上機場口岸) ⟷ 珠海九洲港', cap: '150 尊尚座', evTime: '54 分鐘', dieselTime: '65 分鐘', chargeMin: '12分', charger: '3.5 MW MCS (上環 22kV 樞紐)', notes: '由上環水上機場直達珠海九洲港的零暈船高速水翼航線，比傳統雙體船快超過 10 分鐘。' }
         },
         {
-            id: 'gba-5', code: 'GBA-05', cat: 'gba', dist: 34.0, vessel: 'BAYWING EF-150', speed: 38, kwh: 600, saveHKD: 13.42, co2: 4780, defaultTrips: 4,
+            id: 'gba-5', code: 'GBA-05', cat: 'gba', dist: 34.0, vessel: 'BAYWING D6', speed: 38, kwh: 600, saveHKD: 13.42, co2: 4780, defaultTrips: 4,
             pathD: 'M 325 248 C 265 210, 200 150, 155 95',
             en: { catLabel: 'GBA CROSS-BORDER CORRIDOR', name: 'HKG SkyPier & Sheung Wan CIQ ⟷ Nansha / Dongguan / Pazhou', cap: '150 Pax + Luggage', evTime: '52 mins', dieselTime: '65 mins', chargeMin: '12m', charger: '3.5 MW SkyPier & Sheung Wan 22kV MCS', notes: 'Connects Pearl River Delta manufacturing and exhibition hubs directly to HKIA SkyPier airside departures and Sheung Wan CIQ.' },
             tc: { catLabel: '大灣區跨境走廊', name: '海天碼頭及上環口岸 ⟷ 廣州南沙 / 東莞虎門 / 琶洲', cap: '150 座 + 行李艙', evTime: '52 分鐘', dieselTime: '65 分鐘', chargeMin: '12分', charger: '3.5 MW 海天碼頭及上環 22kV MCS', notes: '直接連通廣州南沙、琶洲及東莞製造業基地至香港國際機場禁區及上環口岸。' }
@@ -613,7 +613,7 @@ window.BAYWING_BOLTONS.push({
                             Interactive Multi-Deck General Arrangement (GA), ULD Baggage & 90s Evacuation Blueprint
                         </h2>
                         <p class="text-sm text-zinc-300 mt-1 max-w-3xl">
-                            Switch between the Main Passenger Deck, the Sub-Deck Watertight Battery/Foil-Strut Compartments, and the Longitudinal Airflow & Evacuation Profile for the 28.5m BAYWING EF-150 (150 Pax) and 15.0m BAYWING-D2 (40 Pax).
+                            Switch between the Main Passenger Deck, the Sub-Deck Watertight Battery/Foil-Strut Compartments, and the Longitudinal Airflow & Evacuation Profile for the 28.5m BAYWING D6 (150 Pax) and 15.0m BAYWING-D2 (40 Pax).
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 font-mono text-xs">
@@ -1200,7 +1200,7 @@ window.BAYWING_BOLTONS.push({
                 badge: 'TRL 3 → TRL 6 IN 18 MONTHS',
                 kpis: [['D1 LENGTH & MASS', '3.56m LOA | 109 kg'], ['FROUDE NUMBER', 'Fn = 1.17 @ 13.4 KT'], ['DYNAMIC SCALING', '2.83× Faster Pitch'], ['EQUIVALENT LOOP', '283 Hz Full-Scale']],
                 bullets: [
-                    ['Mathematical Froude Similitude', 'Because pitch/heave natural frequency scales with √(g/L), our 1:8 scale D1 drone oscillates 2.83× faster than the 28.5m EF-150 flagship.'],
+                    ['Mathematical Froude Similitude', 'Because pitch/heave natural frequency scales with √(g/L), our 1:8 scale D1 drone oscillates 2.83× faster than the 28.5m D6 flagship.'],
                     ['Tolo Harbour Sea Trials (Science Park Backdoor)', 'Stabilizing the D1 at 100Hz in Tolo Harbour mathematically proves 283Hz control authority on the full-scale passenger ferry.'],
                     ['Zero Uncertifiable Hardware', 'Uses the exact same dual STM32H743 ECUs, 1Mbps CAN-FD bus, and IP68 titanium rotary actuators as the commercial fleet.']
                 ]
@@ -1239,20 +1239,20 @@ window.BAYWING_BOLTONS.push({
                 ]
             },
             {
-                tag: 'SLIDE 07 // COMMERCIAL FLEET LINEUP (D1 → D2 → D3/D4/D5 → EF-150)',
+                tag: 'SLIDE 07 // COMMERCIAL FLEET LINEUP (D1 → D2 → D3/D4/D5 → D6)',
                 title: 'One Modular Avionics & Hydrofoil Stack Scaling Across 4 Vessel Classes',
                 badge: 'OPEN CHARIN MCS STANDARD',
-                kpis: [['PHASE 1: D1 DRONE', '3.56m | 109 kg | 13.4 KT'], ['PHASE 2: D2 PILOT', '15.0m | 40 Pax | 28 KT'], ['PHASE 3: D3–D5', '20–28m | 120–400 Pax'], ['FLAGSHIP: EF-150', '28.5m | 150 VIP | 38 KT']],
+                kpis: [['PHASE 1: D1 DRONE', '3.56m | 109 kg | 13.4 KT'], ['PHASE 2: D2 PILOT', '15.0m | 40 Pax | 28 KT'], ['PHASE 3: D3–D5', '20–28m | 120–400 Pax'], ['FLAGSHIP: D6', '28.5m | 150 VIP | 38 KT']],
                 bullets: [
                     ['BAYWING-D2 (15m, 40 Pax Commercial Pilot)', '400 kWh LFP pack, 500 kW–1.0 MW fast charge (5 mins); designed for Tsuen Wan West–Ma Wan and cross-harbour VIP shuttles.'],
                     ['BAYWING D3 / D4 / D5 (120–400 Pax & Freight)', 'Replaces aging diesel ferries across Central–TST, Tuen Mun–Tung Chung–Tai O, and Outlying Island corridors with zero rural pier grid CapEx.'],
-                    ['BAYWING EF-150 (28.5m, 150 VIP Pax, 38 Knots)', '1.8 MWh 1,000V LFP pack + 3.5 MW MCS charging (10–12 mins) built for high-margin uncapped GBA & HKIA SkyPier airside routes.']
+                    ['BAYWING D6 (28.5m, 150 VIP Pax, 38 Knots)', '1.8 MWh 1,000V LFP pack + 3.5 MW MCS charging (10–12 mins) built for high-margin uncapped GBA & HKIA SkyPier airside routes.']
                 ]
             },
             {
                 tag: 'SLIDE 08 // THE PROFIT ENGINE: UNCAPPED GBA & SKYPIER AIRSIDE YIELDS',
                 title: 'Combining Domestic High-Frequency Feeders with HK$ 220–480 GBA Routes',
-                badge: 'HK$ 28.5M EBITDA / YR PER EF-150',
+                badge: 'HK$ 28.5M EBITDA / YR PER D6',
                 kpis: [['DOMESTIC FARE CAP', 'HK$ 6–25 (TD Regulated)'], ['GBA / SKYPIER FARE', 'HK$ 220–480 (Uncapped)'], ['FOIL SWEET SPOT', '15–40 NM (20–55 Mins)'], ['VESSEL PAYBACK', '2.8 Years on GBA Routes']],
                 bullets: [
                     ['Solving the Domestic Fare-Cap Constraint', 'Local harbour routes prove high-frequency public utility traction, while medium-range cross-border routes generate massive commercial cashflow.'],
@@ -1560,7 +1560,7 @@ window.BAYWING_BOLTONS.push({
                             <select id="yard-cls-select" onchange="updateShipyardSim()" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg p-2.5 text-white outline-none">
                                 <option value="d1">Phase 1: BAYWING-D1 (3.56m Autonomous Testbed — HKSTP + SZ Rapid Mold)</option>
                                 <option value="d2">Phase 2: BAYWING-D2 (15.0m 40-Pax Pilot — Zhuhai Composite Yard)</option>
-                                <option value="ef150" selected>Phase 3: BAYWING EF-150 (28.5m 150-Pax Flagship — Twin Female CNC Molds)</option>
+                                <option value="D6" selected>Phase 3: BAYWING D6 (28.5m 150-Pax Flagship — Twin Female CNC Molds)</option>
                             </select>
                         </div>
                         <div>
@@ -1596,12 +1596,12 @@ window.BAYWING_BOLTONS.push({
     },
     onMount: function() {
         window.updateShipyardSim = function() {
-            const cls = document.getElementById('yard-cls-select')?.value || 'ef150';
+            const cls = document.getElementById('yard-cls-select')?.value || 'D6';
             const qty = parseInt(document.getElementById('yard-qty-slider')?.value || 8);
             const specs = {
                 d1: { moldTot: 120000, baseUnit: 260000, weeks: 2.0, euMult: 2.4 },
                 d2: { moldTot: 1800000, baseUnit: 8400000, weeks: 4.5, euMult: 2.6 },
-                ef150: { moldTot: 4200000, baseUnit: 26800000, weeks: 6.5, euMult: 2.7 }
+                D6: { moldTot: 4200000, baseUnit: 26800000, weeks: 6.5, euMult: 2.7 }
             }[cls];
 
             const moldPerHull = Math.round(specs.moldTot / qty);
@@ -1833,9 +1833,9 @@ window.BAYWING_BOLTONS.push({
         ];
 
         const VESSELS = [
-            { callsign: 'BW-EF150-01', route: 'Sheung Wan ⟷ Macao (GBA-01)', sector: 'gba', x1: 540, y1: 215, x2: 115, y2: 295, spd: '38.0 KT', soc: 78, ride: '+1.80m', color: '#10b981', phase: 0.15 },
-            { callsign: 'BW-EF150-02', route: 'HKIA SkyPier ⟷ SZ Airport (GBA-03)', sector: 'gba', x1: 350, y1: 205, x2: 245, y2: 78, spd: '37.8 KT', soc: 84, ride: '+1.75m', color: '#f59e0b', phase: 0.55 },
-            { callsign: 'BW-EF150-03', route: 'Sheung Wan ⟷ Shekou (GBA-02)', sector: 'gba', x1: 540, y1: 215, x2: 245, y2: 78, spd: '38.2 KT', soc: 71, ride: '+1.82m', color: '#a855f7', phase: 0.75 },
+            { callsign: 'BW-D6-01', route: 'Sheung Wan ⟷ Macao (GBA-01)', sector: 'gba', x1: 540, y1: 215, x2: 115, y2: 295, spd: '38.0 KT', soc: 78, ride: '+1.80m', color: '#10b981', phase: 0.15 },
+            { callsign: 'BW-D6-02', route: 'HKIA SkyPier ⟷ SZ Airport (GBA-03)', sector: 'gba', x1: 350, y1: 205, x2: 245, y2: 78, spd: '37.8 KT', soc: 84, ride: '+1.75m', color: '#f59e0b', phase: 0.55 },
+            { callsign: 'BW-D6-03', route: 'Sheung Wan ⟷ Shekou (GBA-02)', sector: 'gba', x1: 540, y1: 215, x2: 245, y2: 78, spd: '38.2 KT', soc: 71, ride: '+1.82m', color: '#a855f7', phase: 0.75 },
             { callsign: 'BW-D3-01', route: 'Sheung Wan ⟷ TST Shuttle (VH-01)', sector: 'harbour', x1: 540, y1: 215, x2: 575, y2: 175, spd: '24.5 KT', soc: 91, ride: '+1.20m', color: '#00f2ff', phase: 0.30 },
             { callsign: 'BW-D5-01', route: 'Central/SW ⟷ Cheung Chau (ISL-01)', sector: 'harbour', x1: 540, y1: 215, x2: 430, y2: 285, spd: '34.0 KT', soc: 82, ride: '+1.55m', color: '#38bdf8', phase: 0.45 },
             { callsign: 'BW-D4-02', route: 'SkyPier/Tung Chung ⟷ Mui Wo', sector: 'harbour', x1: 350, y1: 205, x2: 430, y2: 285, spd: '35.0 KT', soc: 88, ride: '+1.50m', color: '#10b981', phase: 0.85 }
@@ -2089,7 +2089,7 @@ window.BAYWING_BOLTONS.push({
                         Interactive 5-Year Pro-Forma Revenue, EBITDA &amp; Investor IRR Sensitivity Workbench
                     </h2>
                     <p class="text-sm text-zinc-300 mt-1">
-                        Stress-test our 5-year commercial ramp from Phase 0–1 HKSTP incubation (2027) and Phase 2 D2 pilot launch (2028) to full GBA Water-Airport &amp; SkyPier EF-150 fleet scaling (2029–2031).
+                        Stress-test our 5-year commercial ramp from Phase 0–1 HKSTP incubation (2027) and Phase 2 D2 pilot launch (2028) to full GBA Water-Airport &amp; SkyPier D6 fleet scaling (2029–2031).
                     </p>
                 </div>
 
@@ -2390,7 +2390,7 @@ window.COMPACT_LEDGERS = Object.assign(window.COMPACT_LEDGERS || {}, {
     ],
     rd_d2_cards: [
         ['Manufacturing & Capital (HKD)', '14 Months (PRD Shipyard) • Shipyard CapEx: HK$ 18,500,000 • HKMD & DNV Certs: HK$ 1,500,000 • Total D2 Budget: HK$ 20,000,000 (50% ESS)', 'border-zinc-800'],
-        ['Sheung Wan 22 kV Greenfield Anchor', 'Following our 21 Oct 2026 walkover with HK Electric, establishing a Greenfield EV Terminal adjacent to the Sheung Wan 132/22 kV Zone Substation provides a direct 22 kV feed for D2, D3–D5, and EF-150 operations without Central footpath excavations.', 'border-zinc-800'],
+        ['Sheung Wan 22 kV Greenfield Anchor', 'Following our 21 Oct 2026 walkover with HK Electric, establishing a Greenfield EV Terminal adjacent to the Sheung Wan 132/22 kV Zone Substation provides a direct 22 kV feed for D2, D3–D5, and D6 operations without Central footpath excavations.', 'border-zinc-800'],
         ['1:1 ITC ESS Matching Leverage', 'A HK$ 10,000,000 Seed/Pre-A VC investment unlocks the Hong Kong Innovation and Technology Commission Enterprise Support Scheme (ESS) 1:1 matching grant (HK$ 10,000,000), doubling total capital to HK$ 20,000,000.', 'border-tech-emerald/40 bg-tech-emerald/5']
     ],
     rd_trl_matrix: [
@@ -2442,7 +2442,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mxEl) {
         mxEl.innerHTML = `
             <div class="px-6 py-4 bg-zinc-950 border-b border-zinc-800 flex flex-wrap justify-between items-center gap-2">
-                <span class="font-mono text-sm font-bold text-white uppercase">PLATFORM ROADMAP & TRL PROGRESSION: D1 → D2–D5 → EF-150</span>
+                <span class="font-mono text-sm font-bold text-white uppercase">PLATFORM ROADMAP & TRL PROGRESSION: D1 → D2–D5 → D6</span>
                 <span class="font-mono text-xs text-tech-emerald bg-emerald-950/60 border border-emerald-500/30 px-3 py-1 rounded">FROUDE & C-RATE VALIDATED LEDGER</span>
             </div>
             <div class="hidden lg:grid lg:grid-cols-5 bg-zinc-950/80 border-b border-zinc-800 font-mono text-xs uppercase px-6 py-3.5 font-bold">
@@ -2450,7 +2450,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="text-tech-cyan">D1 (1:8 Drone)</div>
                 <div class="text-tech-amber">D2 (25–40 Pax Pilot)</div>
                 <div class="text-sky-400">D3 / D4 / D5 (HK Fleet)</div>
-                <div class="text-tech-emerald">EF-150 (GBA Flagship)</div>
+                <div class="text-tech-emerald">D6 (GBA Flagship)</div>
             </div>
             <div class="divide-y divide-zinc-800/70 font-mono text-xs">
                 ${window.COMPACT_LEDGERS.rd_trl_matrix.map(r => `
@@ -2745,14 +2745,14 @@ window.CS_CONSOLE_DATA = {
         { tag: "CLP PHASE 1 QUICK-WIN PILOT NODE // REG-02 CORRIDOR", name: "Tsuen Wan West Pier ⟷ Ma Wan Park Island (BAYWING-D2 Pilot)", badge: "✓ COMPACT 15m PILOT: ONLY 42 kWh PER TRIP (ZERO HV TRENCHING NEEDED)", p1: "400V / 250–300 kVA LV", bess: "500 kWh Skid BESS Buffer", dc: "500 kW Fast Top-Up (5m)", p2: "400V + BESS (No HV Needed)", vessel: "BAYWING-D2 (15m, 40 Pax) // 6-Minute Transit (12 Round-Trips/Day)", logic: "Draws steady ~180 kW from CLP street supply to buffer 5-minute 500 kW opportunity boosts", action: "Evaluate Tsuen Wan West waterfront LV pillar availability with CLP Marine eMobility" },
         { tag: "CLP NORTHWEST NT REGIONAL ANCHOR // REG-01 CORRIDOR", name: "Tuen Mun Ferry Terminal ⟷ Tung Chung ⟷ Sha Lo Wan ⟷ Tai O", badge: "✓ HUB-AND-SPOKE: ZERO GRID POWER NEEDED AT SHA LO WAN OR TAI O", p1: "11 kV / 1×1,500 kVA + BESS", bess: "1.5 MWh Container BESS", dc: "1.8 MW – 2.5 MW MCS (11m)", p2: "11 kV / 22 kV (2×1,500 kVA)", vessel: "BAYWING-D4 (24m, 200 Pax, 35 KT) // 26-Min Transit (Touch & Go at Tai O)", logic: "100% charged at Tuen Mun CLP Hub; vessels fly through Chinese White Dolphin park with zero rural grid CapEx", action: "Assess Tuen Mun Ferry Pier 11 kV substation bay allocation with CLP Distribution Planning" },
         { tag: "CLP CBD2 EAST HARBOUR NODE // VH-06 & VH-08 CORRIDORS", name: "Kwun Tong & Kai Tak Runway Park Ferry Piers", badge: "✓ LINKS HK ISLAND EAST TO CBD2 & KAI TAK SPORTS PARK IN 5 MINS", p1: "400V / 400 kVA LV + BESS", bess: "1.0 MWh Modular BESS", dc: "800 kW – 1.2 MW (4m)", p2: "11 kV (1×1,500 kVA Sub)", vessel: "BAYWING-D3 (20m, 120 Pax + Bikes) // 4.5–5 Min Crossing to North Point & Sai Wan Ho", logic: "Synchronizes with HKE North Point / Sai Wan Ho feeders to balance East Harbour demand", action: "Align Kwun Tong Pier feeder capacity with CLP Marine eMobility & Energizing Kowloon East office" },
-        { tag: "CLP / AAHK AIRPORT INTERMODAL HUB // GBA-03 & GBA-05 CORRIDORS", name: "HKIA SkyPier Terminal ⟷ Shenzhen Airport (SZX) & Nansha", badge: "✓ ROUTED TO AAHK ENGINEERING & TECH DIVISION (16 OCT 2026)", p1: "11 kV / 22 kV + 1.5 MWh BESS", bess: "1.5 MWh – 2.0 MWh BESS", dc: "3.5 MW – 3.8 MW MCS (11m)", p2: "22 kV (3×1,500 kVA Bank)", vessel: "BAYWING EF-150 (28.5m, 150 Pax + Luggage, 38 KT) // 40-Min SZX Link", logic: "High-voltage air-to-sea transfer hub powered by CLP Lantau/Airport 22 kV ring + BESS peak-shaving", action: "Coordinate joint AAHK Engineering & CLP Marine eMobility technical review for SkyPier berth MCS arm" },
-        { tag: "MACAO SAR DSMM CONFIRMED NODE (27 OCT 2026) // GBA-01 CORRIDOR", name: "Macao Outer Harbour & Taipa Ferry Terminals (400V Reserve to BESS)", badge: "✓ DSMM CONFIRMED (27 OCT): 400V SURPLUS RESERVES AVAILABLE AT BOTH TERMINALS", p1: "400V Surplus Terminal Reserve", bess: "2.0 MWh Dockside LFP BESS", dc: "2.5 MW – 3.5 MW MCS Boost", p2: "400V Trickle + BESS Step-Up", vessel: "BAYWING EF-150 (28.5m, 150 VIP Pax, 38 KT) // 55-Min HK–Macao Transit", logic: "Draws steady 400V surplus power between sailings into 2.0 MWh BESS; steps up internally to 1,000V DC for 12-min turnaround", action: "Follow up with Macao DSPA & Environmental Protection and Energy Conservation Fund for green BESS/vessel incentives" }
+        { tag: "CLP / AAHK AIRPORT INTERMODAL HUB // GBA-03 & GBA-05 CORRIDORS", name: "HKIA SkyPier Terminal ⟷ Shenzhen Airport (SZX) & Nansha", badge: "✓ ROUTED TO AAHK ENGINEERING & TECH DIVISION (16 OCT 2026)", p1: "11 kV / 22 kV + 1.5 MWh BESS", bess: "1.5 MWh – 2.0 MWh BESS", dc: "3.5 MW – 3.8 MW MCS (11m)", p2: "22 kV (3×1,500 kVA Bank)", vessel: "BAYWING D6 (28.5m, 150 Pax + Luggage, 38 KT) // 40-Min SZX Link", logic: "High-voltage air-to-sea transfer hub powered by CLP Lantau/Airport 22 kV ring + BESS peak-shaving", action: "Coordinate joint AAHK Engineering & CLP Marine eMobility technical review for SkyPier berth MCS arm" },
+        { tag: "MACAO SAR DSMM CONFIRMED NODE (27 OCT 2026) // GBA-01 CORRIDOR", name: "Macao Outer Harbour & Taipa Ferry Terminals (400V Reserve to BESS)", badge: "✓ DSMM CONFIRMED (27 OCT): 400V SURPLUS RESERVES AVAILABLE AT BOTH TERMINALS", p1: "400V Surplus Terminal Reserve", bess: "2.0 MWh Dockside LFP BESS", dc: "2.5 MW – 3.5 MW MCS Boost", p2: "400V Trickle + BESS Step-Up", vessel: "BAYWING D6 (28.5m, 150 VIP Pax, 38 KT) // 55-Min HK–Macao Transit", logic: "Draws steady 400V surplus power between sailings into 2.0 MWh BESS; steps up internally to 1,000V DC for 12-min turnaround", action: "Follow up with Macao DSPA & Environmental Protection and Energy Conservation Fund for green BESS/vessel incentives" }
     ],
     twinHubData: [
         { tag: "KOWLOON DOMESTIC FEEDER & TSING YI MRO (CLP TERRITORY) // CONFIRMED 28 OCT 2026", title: "Kowloon Frictionless Domestic Feeders + Tsing Yi 11 kV Overnight MRO Base", badge: "✓ BYPASSES TST HERITAGE BLOCKADE & CONSOLIDATES CIQ AT SHEUNG WAN", k1: "100% HKE 22kV Charged", k2: "Tsing Yi 11kV MRO Base", k3: "60s Domestic Turnstile", k4: "3-Min Hop to Sheung Wan CIQ", r1: "CLP confirmed legacy TST Pier cannot be retrofitted due to heritage rules & zero substation space", r2: "Cross-harbour shuttles charge 100% on HK Island (22 kV) and perform 60-second unpowered touch-and-go stops at TST", r3: "Tsing Yi / Stonecutters industrial marine lots provide 11 kV overnight haul-out maintenance & foil inspection" },
         { tag: "HONG KONG ISLAND FLAGSHIP ANCHOR (HKE TERRITORY) // CONFIRMED 21–22 OCT 2026", title: "Sheung Wan 22 kV Concrete Customer Substation (FFL ≥ +7.0 mPD) & Open MCS Hub", badge: "✓ ~50m FROM 132/22 kV ZONE SUBSTATION // BUILD IT ONCE, GET IT RIGHT", k1: "HKE Direct 22 kV HV", k2: "1 → 3 → 6 × 1,500 kVA", k3: "FFL ≥ +7.0 mPD Concrete Sub", k4: "All Outlying Islands + GBA", r1: "HKE proactively championed a clean-sheet 22 kV greenfield build rather than digging up old Central footpaths", r2: "3 × 1,500 kVA (4.5 MVA) transformers + 1.5 MWh BESS deliver continuous 3.5 MW+ MCS charging", r3: "Serves as primary charging anchor for both GBA cross-border flights and domestic cross-harbour shuttles" },
         { tag: "MACAO SAR CROSS-BORDER HUB (DSMM CONFIRMED 27 OCT 2026) // GBA-01 CORRIDOR", title: "Outer Harbour & Taipa Ferry Terminals: 400V Surplus Reserve to 2.0 MWh BESS Step-Up", badge: "✓ DSMM OFFICIAL REPLY (27 OCT): SURPLUS 400V RESERVES AVAILABLE AT BOTH PIERS", k1: "DSMM 400V Surplus Reserve", k2: "2.0 MWh Dockside BESS", k3: "Existing Macau CIQ Berths", k4: "Sheung Wan ⟷ Macau (55m)", r1: "DSMM confirmed surplus electrical reserves at Outer Harbour & Taipa terminals capped at 400V", r2: "Onshore 2.0 MWh BESS trickle-charges at 400V between sailings and steps up to 1,000V DC for 12m turnarounds", r3: "Eligible for Macao Environmental Protection and Energy Conservation Fund (DSPA) green transition support" },
-        { tag: "TOP-DOWN EXECUTION PLAYBOOK // HKSTP + SHENZHEN/ZHUHAI INDUSTRIAL VELOCITY", title: "Why Top-Down Executive & Shipyard Momentum Replaces Bottom-Up Bureaucracy", badge: "✓ DUAL SCIENCE PARK (HKSTP + SZ) + GBA SHIPYARD MANUFACTURING FIRST", k1: "Phase 0–1: Digital Twin & D1", k2: "GBA Shipyard: D2 → EF-150", k3: "HKSTP / CEPU Top-Down Push", k4: "100-Year EV Fleet Moat", r1: "Working-level district departments lack mandate for new terminals; HKSTP & Policy Unit drive top-down execution", r2: "Building hulls in Shenzhen/Zhuhai shipyards triggers immediate mainland industrial & port alignment", r3: "HKE and CLP engineers are now directly connected to harmonize 22 kV (HK Island) and 11 kV (Kowloon/NT) standards" }
+        { tag: "TOP-DOWN EXECUTION PLAYBOOK // HKSTP + SHENZHEN/ZHUHAI INDUSTRIAL VELOCITY", title: "Why Top-Down Executive & Shipyard Momentum Replaces Bottom-Up Bureaucracy", badge: "✓ DUAL SCIENCE PARK (HKSTP + SZ) + GBA SHIPYARD MANUFACTURING FIRST", k1: "Phase 0–1: Digital Twin & D1", k2: "GBA Shipyard: D2 → D6", k3: "HKSTP / CEPU Top-Down Push", k4: "100-Year EV Fleet Moat", r1: "Working-level district departments lack mandate for new terminals; HKSTP & Policy Unit drive top-down execution", r2: "Building hulls in Shenzhen/Zhuhai shipyards triggers immediate mainland industrial & port alignment", r3: "HKE and CLP engineers are now directly connected to harmonize 22 kV (HK Island) and 11 kV (Kowloon/NT) standards" }
     ],
     waterAirportTabs: [
         {
@@ -2789,7 +2789,7 @@ window.CS_CONSOLE_DATA = {
             chdr: "WATER-AIRPORT PASSENGER & SECURITY FLOW // STERILE INTERNATIONAL (CIQ) VS. UNRESTRICTED DOMESTIC FEEDER LANE",
             rows: [
                 ["1. Why Consolidating CIQ at Sheung Wan Wins:", "Building a second passport-control terminal in congested Kowloon doubles cost and security red tape. Concentrating CIQ at Sheung Wan plugs directly into the existing Macau Terminal Immigration/Customs sector."],
-                ["2. Sterile International Airside Zone (GBA & Macau):", "Automated Immigration e-Channels, Customs X-ray baggage drop, and sterile boarding gangway for 38-knot EF-150 flights to Macau, Shenzhen Shekou, SZX Airport, and Zhuhai."],
+                ["2. Sterile International Airside Zone (GBA & Macau):", "Automated Immigration e-Channels, Customs X-ray baggage drop, and sterile boarding gangway for 38-knot D6 flights to Macau, Shenzhen Shekou, SZX Airport, and Zhuhai."],
                 ["3. Unrestricted Domestic Landside Zone (Harbour & Islands):", "Physically separated Octopus-gate concourse allowing Kowloon cross-harbour shuttles (TST/Hung Hom) and Outlying Island ferries to dock in 60 seconds with zero customs friction."],
                 ["4. Seamless Kowloon-to-GBA Transfer:", "Kowloon passengers either hop a 3-minute domestic BAYWING shuttle across to the Sheung Wan domestic berth or take a bus/MTR to Central/Sheung Wan and walk straight into the CIQ departure hall."]
             ]
@@ -2817,7 +2817,7 @@ window.CS_CONSOLE_DATA = {
                 ["1. The Short-Route Domestic Price-Cap Trap:", "Local HK routes are regulated public utilities with Transport Department fare caps. While electric foils cut fuel OPEX by 78%, ticket revenue upside is capped by policy."],
                 ["2. The 15–40 NM Electric Hydrofoil Sweet Spot:", "Medium-range cross-border routes (Sheung Wan to Macau/Shekou/Zhuhai & SkyPier to Shenzhen Airport/Macau) operate at peak foil L/D efficiency (38–55 mins) with uncapped commercial pricing."],
                 ["3. HKIA SkyPier Airside Airline Feeder Model:", "Plugging into SkyPier's underground Automated People Mover (APM) lets international airline passengers transfer customs-free between HKIA Terminal 1 and Shenzhen/Macau."],
-                ["4. Hub-and-Feeder Profit Maximization:", "Lightweight domestic shuttles act as high-frequency passenger funnels into the Sheung Wan Water-Airport, where the medium-range EF-150 fleet captures HK$ 220–480+ per ticket."]
+                ["4. Hub-and-Feeder Profit Maximization:", "Lightweight domestic shuttles act as high-frequency passenger funnels into the Sheung Wan Water-Airport, where the medium-range D6 fleet captures HK$ 220–480+ per ticket."]
             ]
         }
     ]
@@ -2843,13 +2843,13 @@ document.addEventListener('DOMContentLoaded', () => {
         ttEl.innerHTML = `
             <div class="data-card rounded-2xl overflow-hidden">
                 <div class="p-6 bg-zinc-950 border-b border-zinc-800 flex flex-wrap justify-between items-center gap-4">
-                    <div><span class="text-xs font-mono text-tech-cyan uppercase block">TERMINAL TABLE 01 // ONE UNIFIED OPEN-STANDARD BERTH</span><h3 class="text-xl font-mono font-bold text-white mt-0.5">Universal Berth Compatibility (D2 → D5 → EF-150 & Third-Party Ferries)</h3></div>
+                    <div><span class="text-xs font-mono text-tech-cyan uppercase block">TERMINAL TABLE 01 // ONE UNIFIED OPEN-STANDARD BERTH</span><h3 class="text-xl font-mono font-bold text-white mt-0.5">Universal Berth Compatibility (D2 → D5 → D6 & Third-Party Ferries)</h3></div>
                     <span class="font-mono text-xs px-3 py-1 rounded bg-tech-cyan/15 border border-tech-cyan/40 text-tech-cyan font-bold">CharIN MCS (IEC 61851-23-3) + ISO 15118-20</span>
                 </div>
                 <div class="divide-y divide-zinc-800/80 text-sm">
                     <div class="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4"><div><div class="font-mono font-bold text-tech-cyan text-base">Phase 1: BAYWING-D2 (15.0m LOA | 25–40 Pax Shuttle)</div><p class="text-zinc-300 mt-1">400 kWh LFP Battery • Powered by Stage 1 HKE 1×1,500 kVA Transformer + 1.5 MWh BESS Buffer</p></div><div class="font-mono text-right shrink-0"><span class="text-base font-bold text-tech-emerald block">500 kW – 1.0 MW Charge</span><span class="text-xs text-zinc-400">Turnaround: 5–6 Mins</span></div></div>
                     <div class="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4"><div><div class="font-mono font-bold text-sky-400 text-base">Phase 2: BAYWING D3 / D4 / D5 (20m–28m | 120–400 Pax & Freight)</div><p class="text-zinc-300 mt-1">600 kWh – 1.4 MWh LFP Battery • Synchronized across Sheung Wan HKE Hub & CLP Kowloon/NT Hubs + 90s Cargo Swap</p></div><div class="font-mono text-right shrink-0"><span class="text-base font-bold text-tech-emerald block">800 kW – 2.5 MW MCS</span><span class="text-xs text-zinc-400">Turnaround: 4–9 Mins</span></div></div>
-                    <div class="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4"><div><div class="font-mono font-bold text-purple-400 text-base">Phase 3+: BAYWING EF-150 & Open Third-Party Ferries (28.5m | 150 VIP Pax)</div><p class="text-zinc-300 mt-1">1.8 MWh 1,000V LFP Battery • Powered by 3×1,500 kVA (4.5 MVA) HKE Bank • Open-access ISO 15118-20 billing</p></div><div class="font-mono text-right shrink-0"><span class="text-base font-bold text-tech-emerald block">3.5 MW+ Direct MCS</span><span class="text-xs text-zinc-400">Turnaround: 10–12 Mins</span></div></div>
+                    <div class="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4"><div><div class="font-mono font-bold text-purple-400 text-base">Phase 3+: BAYWING D6 & Open Third-Party Ferries (28.5m | 150 VIP Pax)</div><p class="text-zinc-300 mt-1">1.8 MWh 1,000V LFP Battery • Powered by 3×1,500 kVA (4.5 MVA) HKE Bank • Open-access ISO 15118-20 billing</p></div><div class="font-mono text-right shrink-0"><span class="text-base font-bold text-tech-emerald block">3.5 MW+ Direct MCS</span><span class="text-xs text-zinc-400">Turnaround: 10–12 Mins</span></div></div>
                 </div>
             </div>
             <div class="data-card rounded-2xl overflow-hidden">
@@ -3326,7 +3326,7 @@ window.BAYWING_BOLTONS.push({
                     </div>
                     <div class="data-card p-5 rounded-2xl bg-zinc-950 border-t-4 border-t-tech-amber space-y-2">
                         <span class="text-tech-amber font-bold">STAGE 3 // 2029–2031 (SERIES A)</span>
-                        <h3 class="text-base font-bold text-white font-sans">28.5m EF-150 GBA Water-Airport &amp; SkyPier Fleet</h3>
+                        <h3 class="text-base font-bold text-white font-sans">28.5m D6 GBA Water-Airport &amp; SkyPier Fleet</h3>
                         <p class="text-zinc-400 font-sans leading-relaxed">Upgrade Sheung Wan to 3×1,500 kVA (4.5 MVA) + Macao 2.0 MWh BESS; scale to 18 vessels across Macau, Shekou &amp; SkyPier SZX.</p>
                     </div>
                     <div class="data-card p-5 rounded-2xl bg-zinc-950 border-t-4 border-t-purple-400 space-y-2">
@@ -3411,7 +3411,7 @@ window.BAYWING_BOLTONS.push({
                     <div class="p-4 rounded-xl bg-[#070b12] border border-tech-amber/40">
                         <span class="text-tech-amber font-bold block">ROUND 3 // SERIES A INFRASTRUCTURE</span>
                         <span class="text-lg font-bold text-white block mt-1">Project-Financed SPV Fleet</span>
-                        <p class="text-zinc-400 font-sans mt-1">22 kV BESS hubs and EF-150 hulls qualify for HKMA Green Bonds and maritime asset leasing.</p>
+                        <p class="text-zinc-400 font-sans mt-1">22 kV BESS hubs and D6 hulls qualify for HKMA Green Bonds and maritime asset leasing.</p>
                     </div>
                 </div>
             </div>
@@ -3470,10 +3470,10 @@ window.BAYWING_BOLTONS.push({
                             <span>📐 NAVAL ARCHITECTURAL SIMILITUDE LAW // FROUDE NUMBER Fn = V / √(g·L) = 1.17</span>
                         </div>
                         <h2 class="text-2xl sm:text-3xl font-mono font-bold text-white uppercase">
-                            Interactive Froude Dynamic Scaling Lab: Why 100Hz on D1 (1:8) Proves 283Hz on EF-150
+                            Interactive Froude Dynamic Scaling Lab: Why 100Hz on D1 (1:8) Proves 283Hz on D6
                         </h2>
                         <p class="text-sm text-zinc-300 mt-1 max-w-3xl">
-                            Adjust the geometric scale ratio (1:λ) below to verify how length, speed, displacement mass, and pitch/heave natural oscillation frequency scale relative to our 28.5m, 56-tonne, 38-knot BAYWING EF-150 flagship.
+                            Adjust the geometric scale ratio (1:λ) below to verify how length, speed, displacement mass, and pitch/heave natural oscillation frequency scale relative to our 28.5m, 56-tonne, 38-knot BAYWING D6 flagship.
                         </p>
                     </div>
                     <button onclick="document.getElementById('frd-scale-slider').value=8;updateFroudeLab();" class="px-3.5 py-2 rounded-lg bg-tech-emerald text-slate-950 font-mono text-xs font-bold hover:opacity-90">
@@ -3525,7 +3525,7 @@ window.BAYWING_BOLTONS.push({
                     <div class="bg-[#050b14] rounded-xl border border-zinc-800 p-4">
                         <div class="flex flex-wrap justify-between font-mono text-xs mb-2 gap-2">
                             <span class="text-tech-amber font-bold">━ SUB-SCALE TESTBED NATURAL PITCH OSCILLATION (2.83× FASTER AT 1:8)</span>
-                            <span class="text-tech-cyan font-bold">━ 28.5m FULL-SCALE EF-150 PITCH WAVE RESPONSE (SLOWER INERTIAL PERIOD)</span>
+                            <span class="text-tech-cyan font-bold">━ 28.5m FULL-SCALE D6 PITCH WAVE RESPONSE (SLOWER INERTIAL PERIOD)</span>
                         </div>
                         <canvas id="froude-lab-canvas" width="960" height="175" class="w-full h-auto rounded bg-[#03070e]"></canvas>
                     </div>
@@ -3557,7 +3557,7 @@ window.BAYWING_BOLTONS.push({
             const ctx = c.getContext('2d');
             ctx.clearRect(0, 0, c.width, c.height);
 
-            // Full-scale EF-150 slow oscillation wave (Cyan)
+            // Full-scale D6 slow oscillation wave (Cyan)
             ctx.strokeStyle = '#00f2ff'; ctx.lineWidth = 3;
             ctx.beginPath();
             for (let x = 0; x <= c.width; x += 4) {
@@ -3932,9 +3932,9 @@ window.INDEX_COMPACT_DATA = {
         ['Tri-Grid Shore Hubs', '10–12', 'MINS', '22kV HKE • 11kV CLP • 400V-BESS', 'text-tech-cyan']
     ],
     directory: [
-        ['#vision-10yr', 'hover:border-tech-emerald', 'text-tech-emerald', '01. 10-Yr Plan & Fleet', '↓', 'Dual Science Park (HKSTP + SZ/Zhuhai) industrial flywheel & D2–EF150 fleet.'],
+        ['#vision-10yr', 'hover:border-tech-emerald', 'text-tech-emerald', '01. 10-Yr Plan & Fleet', '↓', 'Dual Science Park (HKSTP + SZ/Zhuhai) industrial flywheel & D2–D6 fleet.'],
         ['routes-calculator.html', 'hover:border-tech-cyan', 'text-tech-cyan', '02. 28 Routes & OPEX', '→', 'Interactive hydrographic chart of all 23 HK routes + 5 GBA CIQ corridors.'],
-        ['engineering-rd.html', 'hover:border-tech-amber', 'text-tech-amber', '03. R&D CAD Blueprints', '→', '1600×900 schematics for D1, D2 & EF-150 + Froude scaling (Fn=1.17).'],
+        ['engineering-rd.html', 'hover:border-tech-amber', 'text-tech-amber', '03. R&D CAD Blueprints', '→', '1600×900 schematics for D1, D2 & D6 + Froude scaling (Fn=1.17).'],
         ['digital-twin.html', 'hover:border-sky-400', 'text-sky-400', '04. Digital Twin (28+ Mods)', '→', '11-Domain CFD, FEA, 2oo3 Fly-by-Wire, Cap.127 & IMO/DNV rules workbench.'],
         ['capital-stakeholders.html', 'hover:border-purple-400', 'text-purple-400', '05. 22kV Hub & 14 Logs', '→', 'Sheung Wan 22kV Water-Airport + CLP 11kV + Macao 400V-BESS & 14 filings.']
     ],
@@ -3948,12 +3948,12 @@ window.INDEX_COMPACT_DATA = {
         ['border-l-tech-cyan', 'text-tech-cyan', 'STAGE 1 // YEARS 1–2 (2026–2027)', 'Digital Twin, D1 & D2 Shipyard Build', 'Complete 100Hz flight-control validation in Tolo Harbour (D1, HK$ 3.198M Phase 0–1 budget, 93.5% grant-backed), advance Cap. 127 Sheung Wan 22 kV (+7.0 mPD) allocation (GIS: 22.290175, 114.148746), and build the 15m BAYWING-D2 pilot (HK$ 20.0M with 1:1 ITC ESS match).'],
         ['border-l-sky-400', 'text-sky-400', 'STAGE 2 // YEARS 3–4 (2028–2029)', 'D3 Cross-Harbour & D4 Island Express', 'Electrify all 8 Victoria Harbour crossings with the 120-passenger D3 shuttle (charging 100% on the HK Island 22 kV side with 60s touch-and-go at TST) and launch 14–18 minute Outlying Island express services with the 220-passenger D4.'],
         ['border-l-tech-amber', 'text-tech-amber', 'STAGE 3 // YEARS 5–6 (2030–2031)', 'D5 Trunk Liners & 90s Ro-Ro Freight', 'Deploy 400-passenger D5 vessels on Central–Cheung Chau and Central–Mui Wo trunk routes alongside dedicated Ro-Ro cargo pods for 90-second modular island supermarket and municipal pallet swaps.'],
-        ['border-l-purple-400', 'text-purple-400', 'STAGE 4 // YEARS 7–10+ (2032–2050+)', 'EF-150 Water-Airport & SkyPier Network', 'Scale the 38-knot EF-150 flagship across our Sheung Wan 22 kV CIQ Water-Airport, HKIA SkyPier airside APM hub, and Macao Outer Harbour/Taipa (400V-to-BESS buffer)—capturing uncapped commercial yields across Macau, Shenzhen, and Zhuhai.']
+        ['border-l-purple-400', 'text-purple-400', 'STAGE 4 // YEARS 7–10+ (2032–2050+)', 'D6 Water-Airport & SkyPier Network', 'Scale the 38-knot D6 flagship across our Sheung Wan 22 kV CIQ Water-Airport, HKIA SkyPier airside APM hub, and Macao Outer Harbour/Taipa (400V-to-BESS buffer)—capturing uncapped commercial yields across Macau, Shenzhen, and Zhuhai.']
     ],
     gallery: [
         ['assets/D1.jpg', 'border-tech-cyan/50 text-tech-cyan', 'PHASE 1 // BAYWING-D1 (3.56m)', 'Tolo Harbour 1:8 Autonomous Drone', '13.4 KT (Fn 1.17)', 'text-zinc-400'],
         ['assets/D2.jpg', 'border-tech-emerald/50 text-tech-emerald', 'PHASE 2 // BAYWING-D2 (15.0m)', '25–40 Pax Harbour & Island Pilot', '32.0 KT | 500kW', 'text-tech-emerald'],
-        ['assets/ef150.jpg', 'border-purple-400/50 text-purple-300', 'PHASE 3+ // BAYWING EF-150 (28.5m)', '150-Pax GBA CIQ Flagship', '38.0 KT | 3.5MW', 'text-purple-400']
+        ['assets/D6.jpg', 'border-purple-400/50 text-purple-300', 'PHASE 3+ // BAYWING D6 (28.5m)', '150-Pax GBA CIQ Flagship', '38.0 KT | 3.5MW', 'text-purple-400']
     ]
 };
 
@@ -4015,7 +4015,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ----------------------------------------------------------------------------
-// COMPONENT 25: INTERACTIVE FLEET SILHOUETTE SCALER (D1 vs D2 vs D3-D5 vs EF-150)
+// COMPONENT 25: INTERACTIVE FLEET SILHOUETTE SCALER (D1 vs D2 vs D3-D5 vs D6)
 // Mounts automatically on: index.html
 // ----------------------------------------------------------------------------
 window.BAYWING_BOLTONS.push({
@@ -4031,14 +4031,14 @@ window.BAYWING_BOLTONS.push({
                             <span>📏 PROPORTIONAL NAVAL ARCHITECTURE // TRUE-TO-SCALE LENGTH &amp; FOIL SPAN SILHOUETTES</span>
                         </div>
                         <h2 class="text-2xl sm:text-3xl font-mono font-bold text-white uppercase">
-                            Interactive Fleet Size &amp; Sub-System Scaling Comparator (3.56m D1 → 28.5m EF-150)
+                            Interactive Fleet Size &amp; Sub-System Scaling Comparator (3.56m D1 → 28.5m D6)
                         </h2>
                     </div>
                     <div class="flex flex-wrap gap-2 font-mono text-xs">
                         <button onclick="highlightScaleVessel(0)" id="vscl-btn-0" class="px-3 py-1.5 rounded bg-tech-cyan text-slate-950 font-bold">Compare All 4 Classes</button>
                         <button onclick="highlightScaleVessel(1)" id="vscl-btn-1" class="px-3 py-1.5 rounded bg-zinc-900 text-zinc-300 border border-zinc-700">Focus: D1 (3.56m)</button>
                         <button onclick="highlightScaleVessel(2)" id="vscl-btn-2" class="px-3 py-1.5 rounded bg-zinc-900 text-zinc-300 border border-zinc-700">Focus: D2 (15.0m)</button>
-                        <button onclick="highlightScaleVessel(3)" id="vscl-btn-3" class="px-3 py-1.5 rounded bg-zinc-900 text-zinc-300 border border-zinc-700">Focus: EF-150 (28.5m)</button>
+                        <button onclick="highlightScaleVessel(3)" id="vscl-btn-3" class="px-3 py-1.5 rounded bg-zinc-900 text-zinc-300 border border-zinc-700">Focus: D6 (28.5m)</button>
                     </div>
                 </div>
 
@@ -4068,7 +4068,7 @@ window.BAYWING_BOLTONS.push({
                 { id: 1, name: 'D1 (3.56m)', loa: 3.56, x: 40, color: '#00f2ff', sub: '109 kg • 13.4 KT' },
                 { id: 2, name: 'BAYWING-D2 (15.0m)', loa: 15.0, x: 145, color: '#10b981', sub: '40 Pax • 32 KT' },
                 { id: 3, name: 'BAYWING D3–D5 (24.0m)', loa: 24.0, x: 355, color: '#f59e0b', sub: '220 Pax • 35 KT' },
-                { id: 3, name: 'BAYWING EF-150 (28.5m)', loa: 28.5, x: 660, color: '#a855f7', sub: '150 VIP • 38 KT' }
+                { id: 3, name: 'BAYWING D6 (28.5m)', loa: 28.5, x: 660, color: '#a855f7', sub: '150 VIP • 38 KT' }
             ];
 
             ctx.font = 'bold 11px JetBrains Mono';
@@ -4537,14 +4537,14 @@ window.BAYWING_BOLTONS.push({
                 steps: [
                     ['T+00:00 // SHEUNG WAN MTR EXIT D', '+7.0mPD Covered Travellator', 'Step off MTR Exit D onto our elevated weather-proof moving walkway along the promenade straight to Landing No. 1 (3.2 mins).', '#00f2ff'],
                     ['T+03:15 // BIOMETRIC CIQ HALL', '2.4-Min e-Channel & X-Ray', 'Clear automated Hong Kong Immigration e-Channels and customs baggage scan inside our Sterile International Zone with zero queues.', '#10b981'],
-                    ['T+06:00 // 38-KNOT FOIL FLIGHT', '<58 dBA Cabin • 0.024g Ride', 'Board BAYWING EF-150 via vacuum-locked gangway; fly +1.8m above Pearl River chop at 38 knots with zero seasickness.', '#a855f7'],
+                    ['T+06:00 // 38-KNOT FOIL FLIGHT', '<58 dBA Cabin • 0.024g Ride', 'Board BAYWING D6 via vacuum-locked gangway; fly +1.8m above Pearl River chop at 38 knots with zero seasickness.', '#a855f7'],
                     ['T+61:00 // MACAU TAIPA ARRIVAL', '400V-to-BESS 12m Turnaround', 'Disembark rested at Macau Taipa / Outer Harbour while the dockside 2.0 MWh BESS recharges the vessel in 12 minutes.', '#f59e0b']
                 ]
             },
             {
                 steps: [
                     ['T+00:00 // SHENZHEN AIRPORT PORT', 'Through-Checked ULD Bag', 'Check luggage at Shenzhen Bao’an / Shekou directly to final long-haul destination (London/New York) and receive both boarding passes.', '#00f2ff'],
-                    ['T+05:00 // 90s ULD CONTAINER LOAD', 'Automated Stern Bay Lock', '4 modular aviation ULD baggage pods roll onto the EF-150 stern deck in 90 seconds; vessel departs at 38 knots across the estuary.', '#10b981'],
+                    ['T+05:00 // 90s ULD CONTAINER LOAD', 'Automated Stern Bay Lock', '4 modular aviation ULD baggage pods roll onto the D6 stern deck in 90 seconds; vessel departs at 38 knots across the estuary.', '#10b981'],
                     ['T+45:00 // HKIA SKYPIER AIRSIDE', 'Zero HK Immigration Queue', 'Dock at SkyPier bonded airside berth (3.8 MW MCS boost); passengers bypass Hong Kong immigration and customs completely.', '#f59e0b'],
                     ['T+48:30 // HKIA TERMINAL 1 GATE', '3.5-Min Underground APM', 'Ride the bonded underground Automated People Mover (APM) train straight to HKIA Terminal 1 departure gates—saving 95 minutes.', '#a855f7']
                 ]
@@ -5236,7 +5236,7 @@ window.BAYWING_BOLTONS.push({
                             Interactive Smart-Turnstile &amp; Airline-Style Dynamic Cabin Yield Simulator
                         </h2>
                         <p class="text-sm text-zinc-300 mt-1 max-w-3xl">
-                            Adjust the VIP / Business Lounge seat allocation and peak-hour surge multiplier on the 150-seat BAYWING EF-150 to see how airline-style yield management maximizes revenue per sailing across Sheung Wan Water-Airport and HKIA SkyPier routes.
+                            Adjust the VIP / Business Lounge seat allocation and peak-hour surge multiplier on the 150-seat BAYWING D6 to see how airline-style yield management maximizes revenue per sailing across Sheung Wan Water-Airport and HKIA SkyPier routes.
                         </p>
                     </div>
                 </div>
