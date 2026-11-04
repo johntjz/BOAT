@@ -123,7 +123,7 @@
                             <div>
                                 <div class="flex items-center gap-1.5">
                                     <span class="font-mono font-extrabold text-white text-sm tracking-wider group-hover:text-tech-cyan transition-colors">BAYWING</span>
-                                    <span class="font-mono text-[10px] px-1.5 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-tech-cyan">D1–D5 / d6</span>
+                                    <span class="font-mono text-[10px] px-1.5 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-tech-cyan">D1–D5 / D6</span>
                                 </div>
                                 <div class="text-[10px] font-mono text-zinc-400 hidden 2xl:block" data-i18n="hdr_sub">HK & GBA Electric Hydrofoil & 22kV Hub</div>
                             </div>
@@ -210,7 +210,7 @@
 (function initBaywingCoreUpgrades() {
     const MEDIA_FOLDER = 'assets/';
     const KNOWN_MEDIA = new Set([
-        'D1.jpg', 'D1vid.mp4', 'D2.jpg', 'd6.jpg',
+        'D1.jpg', 'D1vid.mp4', 'D2.jpg', 'D6.jpg',
         'IMG_1594.jpeg', 'IMG_1595.jpeg', 'IMG_1596.jpeg'
     ]);
 
